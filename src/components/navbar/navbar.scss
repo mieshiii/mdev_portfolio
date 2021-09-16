@@ -1,8 +1,88 @@
+@import "../../global.scss";
+
 .navbar{
     width: 100%;
-    height: 50px;
-    background-color: #efebdd;
+    height: 70px;
+    background-color: #fff;
+    color: $mainColor;
     position: fixed;
     top: 0;
-    z-index: 5;
+    z-index: 3;
+    transition: all 1s ease;
+
+    .wrapper{
+        padding: 9px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        .left{
+            display: flex;
+            align-items: center;
+
+            .logo{
+                font-size: 42px;
+                font-weight: 400;
+                text-decoration: none;
+                color: inherit;
+                margin-right: 30px;
+            }
+
+            .itemContainer{
+                display: flex;
+                align-items: center;
+                margin-left: 20px;
+
+                .icon{
+                    font-size: 20px;
+                    margin-right: 5px;
+                }
+                span{
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .right{
+            .hamburger{
+                width: 32px;
+                height: 25px;
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+                justify-content: space-between;
+
+                span{
+                    width: 100%;
+                    height: 2px;
+                    background-color: $mainColor;
+                    transform-origin: left;
+                    transition: all 1s ease;
+                }
+            }
+        }
+    }
+
+    &.active{
+        background-color: $mainColor;
+        color: #fff;
+
+        .hamburger{
+            span{
+                &:first-child{
+                    background-color: #fff;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                }
+                &:last-child{
+                    background-color: #fff;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
 }
