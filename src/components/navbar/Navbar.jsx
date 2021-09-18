@@ -9,8 +9,10 @@ export default function Navbar({menuOpen, setMenuOpen}) {
         <div className={"navbar " + (menuOpen && "active")}>
             <div className="wrapper">
                 <div className="left">
+                    <div className="itemContainer">
+                        <a href="#landing"><img src="assets/dev_logo.png" alt="Dev Logo" className="devlogo"/></a>
+                    </div>
                     <a href="#landing" className="logo">
-                        <img src="../../../public/assets/" alt="Dev Logo" />
                         miesdelacruz
                     </a>
                     <div className="itemContainer">
