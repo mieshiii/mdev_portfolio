@@ -1,9 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PortfolioList from '../portfolioList/PortfolioList';
 import "./portfolio.scss";
+import {
+    fullstack,
+    backend,
+    frontend
+} from "../../data";
 
 export default function Portfolio() {
     const [selected, setSelected] = useState("fullstack");
+    const [data, setData] =  useState([]);
     const list = [
         {
             id: "fullstack",
@@ -19,6 +25,22 @@ export default function Portfolio() {
         },
     ];
 
+    useEffect(() => {
+        switch(selected){
+            default: setData(fullstack);
+            break;
+
+            case "fullstack": setData(fullstack);
+            break;
+
+            case "frontend": setData(frontend);
+            break;
+
+            case "backend": setData(backend);
+            break;
+        }
+    }, [selected]);
+
     return (
         <div className="portfolio" id="portfolio">
             <h1>Portfolio</h1>
@@ -29,35 +51,17 @@ export default function Portfolio() {
                     active={selected === item.id} 
                     setSelected={setSelected}
                     id={item.id}
+                    key={item.id}
                     />
                 ))}
             </ul>
             <div className="container">
-                <div className="item">
-                    <img src="assets/MERN.png" alt="Budget Tracking App" />
-                    <h3>Budget Tracking App</h3>
-                </div>
-                <div className="item">
-                    <img src="assets/MERN.png" alt="Budget Tracking App" />
-                    <h3>Budget Tracking App</h3>
-                </div>
-                <div className="item">
-                    <img src="assets/MERN.png" alt="Budget Tracking App" />
-                    <h3>Budget Tracking App</h3>
-                </div>
-                <div className="item">
-                    <img src="assets/MERN.png" alt="Budget Tracking App" />
-                    <h3>Budget Tracking App</h3>
-                </div>
-                <div className="item">
-                    <img src="assets/MERN.png" alt="Budget Tracking App" />
-                    <h3>Budget Tracking App</h3>
-                </div>
-                <div className="item">
-                    <img src="assets/MERN.png" alt="Budget Tracking App" />
-                    <h3>Budget Tracking App</h3>
-                </div>
-                
+                {data.map((d) => (
+                    <div className="item" key={d.id}>
+                        <img src={d.img} alt="Project" />
+                        <h3>{d.title}</h3>
+                    </div>
+                ))}
             </div>
         </div>
     )

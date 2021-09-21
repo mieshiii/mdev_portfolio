@@ -9,10 +9,9 @@ export default function Landing() {
     useEffect(() => {
         init(textRef.current, { 
             showCursor: true,
-            backDelay: 1500,
+            backDelay: 1000,
             typeSpeed: 100,
             backSpeed: 100,
-            cursorChar: "|",
             loop: true,
             strings: ['Web Development', 'Web Design', 'React.js', 'Bootstrap', 'HTML/CSS', 'Express.js', 'Node.js', 'WordPress'] 
         })
