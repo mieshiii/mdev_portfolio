@@ -1,19 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./contact.scss";
 
 
 export default function Contact() {
+
+    const [message, setMessage] = useState(false);
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setMessage(true);
+    };
+
     return (
         <div className="contact" id="contact">
             <div className="left">
                 <h2>
                     Let's work on that idea!
                 </h2>
-                <form action="">
-                    <input type="email" placeholder="your_email@mail.com" id="email" required/>
-                    <textarea name="" id="message" cols="30" rows="10" placeholder="Type your message here" required></textarea>
+                <form onSubmit={handleSubmit}  action="mailto:mieseliel.delacruz@gmail.com" method="POST" enctype="multipart/form-data">
+                    <input type="text" placeholder="Type your name here" name="name" id="name" required/>
+                    <input type="email" placeholder="your_email@mail.com" name="email" id="email" required/>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here" required></textarea>
                     <button type="submit">Send</button>
                 </form>
+                {message && <span>Thanks, I'll get back to you as soon as possible!</span>}
                 <div className="socMed">
                     <a href="https://www.linkedin.com/in/mies-eliel-dela-cruz-06a24716b/" target="_blank" rel="noreferrer">
                         <img src="assets/soc_med/linkedin.png" alt="" />
@@ -31,7 +40,7 @@ export default function Contact() {
                         <img src="assets/soc_med/fb.png" alt="" />
                     </a>
                 </div>
-                <p>&copy; Mies Eliel Dela Cruz - 2021</p>
+                <p>&copy; 2021 Mies Eliel Dela Cruz. All rights reserved</p>
             </div>
             
             <div className="right">

@@ -18,6 +18,7 @@
             align-items: center;
             justify-content: center;
             font-size: 30px;
+            padding-bottom: 10px;
         }
         form{
             height: 60%;
@@ -100,6 +101,11 @@
                     width: 60px;
                }
             }
+        }
+        span{
+            padding-top: 10px;
+            font-size: 2.5vh;
+            font-weight: 700;
         }
     }
     .right{
