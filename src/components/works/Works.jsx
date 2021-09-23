@@ -17,19 +17,19 @@ export default function Works() {
         },
         {
           id: "2",
-          icon: "./assets/globe.png",
-          title: "Mobile Application",
+          icon: "./assets/restAPI.png",
+          title: "E-commerce API",
           desc:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "Basic e-commerce back-end with Node.js and Express.js, MongoDB serving as the database. Functionality comes with adding products to the database, adding items to cart, updating items and deleting items",
           img:
             "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
         },
         {
           id: "3",
-          icon: "./assets/writing.png",
-          title: "Branding",
+          icon: "./assets/html5-2.png",
+          title: "Static website",
           desc:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "HTML/CSS and Boostrap5 project as a portfolio",
           img:
             "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
         },
