@@ -16,7 +16,7 @@ export default function Contact() {
                 <h2>
                     Let's work on that idea!
                 </h2>
-                <form onSubmit={handleSubmit}  action="mailto:mieseliel.delacruz@gmail.com" method="POST" enctype="multipart/form-data">
+                <form onSubmit={handleSubmit}  action="mailto:mieseliel.delacruz@gmail.com" method="POST">
                     <input type="text" placeholder="Type your name here" name="name" id="name" required/>
                     <input type="email" placeholder="your_email@mail.com" name="email" id="email" required/>
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here" required></textarea>

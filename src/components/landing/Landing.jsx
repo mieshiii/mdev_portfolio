@@ -13,7 +13,7 @@ export default function Landing() {
             typeSpeed: 100,
             backSpeed: 100,
             loop: true,
-            strings: ['Web Development', 'Web Design', 'React.js', 'Bootstrap', 'HTML/CSS', 'Express.js', 'Node.js', 'WordPress'] 
+            strings: ['Web Development', 'Web Design', 'React.js', 'Bootstrap', 'HTML/S-CSS', 'Express.js', 'Node.js', 'WordPress'] 
         })
     }, [])
 
