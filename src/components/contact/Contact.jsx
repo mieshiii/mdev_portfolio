@@ -22,7 +22,7 @@ export default function Contact() {
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here" required></textarea>
                     <button type="submit">Send</button>
                 </form>
-                {message && <span>Thanks, I'll get back to you as soon as possible!</span>}
+                {message && <span>Thanks! I'm looking forward to help you</span>}
                 <div className="socMed">
                     <a href="https://www.linkedin.com/in/mies-eliel-dela-cruz-06a24716b/" target="_blank" rel="noreferrer">
                         <img src="assets/soc_med/linkedin.png" alt="" />

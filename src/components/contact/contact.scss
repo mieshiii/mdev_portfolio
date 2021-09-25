@@ -5,6 +5,10 @@
     color: #fff;
     display: flex;
 
+    @include mobile{
+        flex-direction: column;
+    }
+
     .left{
        
         flex: 0.5;
@@ -12,6 +16,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        @include mobile{
+            flex: 1;
+        }
 
         h2{
             flex-direction: column;
@@ -27,6 +35,11 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
+            @include mobile{
+                width: 80%;
+                padding-bottom: 2px;
+            }
 
             input{
                 margin-bottom: 20px;
@@ -92,13 +105,27 @@
             height: 100px;
             padding-bottom: 50px;
 
+            @include mobile{
+               padding-bottom: 20px;
+               padding-top: 10px;
+            }
+
             a{
+                @include mobile{
+                    margin: 0 20px;
+                 }
                 
                img{
                     padding: 0 40px;
                     color:#fff;
                     height: 60px;
                     width: 60px;
+
+                    @include mobile{
+                        padding: 0 3px;
+                        width: 40px;
+                        height: 40px;
+                     }
                }
             }
         }
@@ -115,6 +142,11 @@
         align-items: center;
         justify-content: center;
         overflow: hidden;
+
+        @include mobile{
+            display: none;
+        }
+
         img{
             height: 70vh;
             top: 30%;

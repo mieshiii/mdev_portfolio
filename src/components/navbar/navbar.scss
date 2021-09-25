@@ -28,6 +28,10 @@
                 color: inherit;
                 margin-right: 30px;
                 align-items: center;
+
+                @include mobile{
+                    display: none;
+                }
             }
 
             .itemContainer{
@@ -45,10 +49,18 @@
                 .icon{
                     font-size: 20px;
                     margin-right: 5px;
+
+                    @include mobile{
+                        display: none;
+                    }
                 }
                 span{
                     font-size: 15px;
                     font-weight: 600;
+
+                    @include mobile{
+                        display: none;
+                    }
                 }
             }
         }

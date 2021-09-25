@@ -13,7 +13,7 @@ export const fullstack = [
     },
     {
       id: 3,
-      title: "E-commerce Web Design",
+      title: "E-commerce Design",
       img:
         "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
     },
@@ -50,7 +50,7 @@ export const fullstack = [
     },
     {
       id: 3,
-      title: "Web E-commerce Design",
+      title: "E-commerce Design",
       img: "https://cdn.dribbble.com/users/3637068/screenshots/15467010/media/69a3279182b75365013fe285733d1122.png?compress=1&resize=1200x900",
     },
     {
@@ -85,7 +85,7 @@ export const fullstack = [
     },
     {
       id: 3,
-      title: "Mobile E-commerce Design",
+      title: "E-commerce Design",
       img:
         "https://cdn.dribbble.com/users/1998175/screenshots/15459384/media/48ac2b43ebe81ba0866afea1383cc939.png?compress=1&resize=1200x900",
     },

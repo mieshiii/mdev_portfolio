@@ -14,6 +14,10 @@
         opacity: 0.5;
         transition: all 0.3s ease;
 
+        @include mobile{
+            display: none;
+        }
+
         &:hover{
             opacity: 1;
         }
@@ -37,11 +41,22 @@
         height: 70vh;
         transition: all 1s ease-out;
 
+        @include mobile{
+            flex-direction: column;
+            justify-content: center;
+            height: 80vh;
+            padding: 1px 0px;
+        }
+
         .container{
             width: 100vw;
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include mobile{
+                padding: 3px 0px;
+            }
 
 
             .item{
@@ -52,6 +67,11 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                @include mobile{
+                    width: 90%;
+                    height: 188px;
+                }
 
                 .left{
                     color: #fff;
@@ -78,12 +98,24 @@
                             align-items: flex-end;
                             justify-content: center;
 
+                            @include mobile{
+                                align-items: center;
+                                width: 100%;
+                                height: 80%;
+                            }
+
                             img{
                                width: 120px;
                                display: flex;
                                justify-content: center;
                                align-items: center;
                                padding-bottom: 20px;
+
+                               @include mobile{
+                                width: 80%;
+                                height: 70%;
+                                padding-bottom: 0px;
+                            }
                             }
                         }
 
@@ -91,6 +123,10 @@
                             display: flex;
                             justify-content: center;
                             font-size: 28px;
+
+                            @include mobile{
+                                display: none;
+                            }
                         }
 
                         p{
@@ -100,6 +136,10 @@
                             text-align: center;
                             font-size: 18px;
                             width: 100%;
+
+                            @include mobile{
+                                display: none;
+                            }
                         }
 
                         span{
@@ -111,6 +151,10 @@
                             font-weight: 600;
                             text-decoration: underline;
                             cursor: pointer;
+
+                            @include mobile{
+                                padding-top: 0px;
+                            }
                         }
                     }
                 }
