@@ -10,16 +10,16 @@
     margin-bottom: 2px;
 
     @include mobile{
-       padding-top: 5px;
-       margin-bottom: 0px;
+        height: 60vh;
+        padding-top: 15px;
+        margin-bottom: 0px;
     }
 
     h1{
         font-size: 50px;
 
         @include mobile{
-            font-size: 38px;
-            padding: 3px 0px;
+            font-size: 40px;
         }
     }
 
@@ -80,9 +80,9 @@
             cursor: pointer;
 
             @include mobile{
-                margin: 2vh 2vw;
+                margin: 1.7vh 2vw;
                 width: 44vw;
-                height: 19vh;
+                height: 16vh;
             }
 
             h3{
